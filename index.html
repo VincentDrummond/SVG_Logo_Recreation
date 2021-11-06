@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Task</title>
+</head>
+<body>
+    
+
+    <svg    width="800" height="800"
+            viewBox="-200 -200 400 400"
+            xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+    <linearGradient id="ringOne" x1="100%" y1="100%" x2="0%" y2="0%">
+        <stop offset="0%" style="stop-color:#434547;" />
+        <stop offset="80%" style="stop-color:#d1e9f8;" />
+    </linearGradient>
+</defs>
+
+<defs>
+    <linearGradient id="ringTwo" x1="100%" y1="100%" x2="0%" y2="0%">
+        <stop offset="50%" style="stop-color:#000;" />
+        <stop offset="100%" style="stop-color:#fff;" />
+    </linearGradient>
+</defs>
+
+<defs>
+    <linearGradient id="ringThree" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="30%" style="stop-color:#2d3946;" />
+        <stop offset="800%" style="stop-color:#d1e9f8;" />
+    </linearGradient>
+</defs>
+
+<defs>
+    <linearGradient id="ringFour" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#c7c7c7;" />
+        <stop offset="100%" style="stop-color:#000;" />
+    </linearGradient>
+</defs>
+
+<defs>
+    <linearGradient id="bottomrightBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="30%" style="stop-color:#5fb3e6;" />
+        <stop offset="90%" style="stop-color:#608ba6;" />
+    </linearGradient>
+</defs>
+
+<defs>
+    <linearGradient id="topleftBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="30%" style="stop-color:#9acff0;" />
+        <stop offset="90%" style="stop-color:#5fb3e6;" />
+    </linearGradient>
+</defs>
+
+<defs>
+    <linearGradient id="topleftGrey" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="30%" style="stop-color:#fff;" />
+        <stop offset="90%" style="stop-color:#0c2535;" />
+    </linearGradient>
+</defs>
+
+<defs>
+    <linearGradient id="bottomrightGrey" x1="20%" y1="20%" x2="100%" y2="100%">
+        <stop offset="20%" style="stop-color:#c7c7c7;" />
+        <stop offset="70%" style="stop-color:#0c2535;" />
+    </linearGradient>
+</defs>
+
+<defs>
+    <linearGradient id="toprightGrey" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="50%" style="stop-color:#c7c7c7;" />
+        <stop offset="100%" style="stop-color:#5a5a5a;" />
+    </linearGradient>
+</defs>
+
+<defs>
+    <linearGradient id="bottomleftWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="50%" style="stop-color:#fff;" />
+        <stop offset="90%" style="stop-color:#c7c7c7;" />
+    </linearGradient>
+</defs>
+
+<defs>
+    <linearGradient id="bottomleftGrey" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="10%" style="stop-color:#d1e9f8;" />
+        <stop offset="90%" style="stop-color:#5a5a5a;" />
+    </linearGradient>
+</defs>
+
+
+<!-- Ring One (Outer Blue to Grey) -->
+<circle r="110"
+    cx="0" cy="0"
+    fill="url(#ringOne)" />
+
+<!-- Thin Black -->
+<circle r="101"
+    cx="0" cy="0" 
+    fill="#000" />
+
+<!-- Ring Two (Big Black) -->
+<circle r="100"
+    cx="0" cy="0" 
+    fill="url(#ringTwo)" />
+
+<!-- Ring Three (Thin Grey to Blue) -->
+<circle r="68"
+    cx="0" cy="0" 
+    fill="url(#ringThree)" />
+
+<!-- Ring Four (Thin Grey to Black) -->
+<circle r="65"
+    cx="0" cy="0" 
+    fill="url(#ringFour)" />
+
+<!-- Ring Four (White) -->
+<circle r="63"
+    cx="0" cy="0" 
+    fill="#fff" />
+
+<!-- Top Left Quadrants -->
+<path   d="M 0 0 L -63 0 A 63 63, 0, 0 1, 0 -63 z" stroke="none"
+        fill="url(#topleftGrey)" />
+    
+<path   d="M -2 -2 L -61 -2 A 61 61, 0, 0 1, -2 -61 z" stroke="none"
+        fill="url(#topleftBlue)"/>
+
+<!-- Bottom Right Quadrants -->
+<path   d="M 0 0 L 63 0 A 63 63, 0, 0 1, 0 63 z" stroke="none"
+        fill="url(#bottomrightGrey"/>
+        
+<path   d="M 2 2 L 61 2 A 61 61, 0, 0 1, 2 61 z" stroke="none"
+        fill="url(#bottomrightBlue)"/>
+
+<!-- Top Right Quadrants -->
+<path   d="M 0 0 L 0 -63 A 63 63, 0, 0 1, 63 0 z" stroke="none"
+        fill="url(#toprightGrey)"/>
+
+<path   d="M 2 -2 L 2 -61 A 61 61, 0, 0 1, 61 -02 z" stroke="none"
+        fill="url(#bottomleftWhite"/>
+
+<!-- Bottom Left Quadrants -->
+<path   d="M 0 0 L 0 63 A 63 63, 0, 0 1, -63 0 z" stroke="none"
+        fill="url(#bottomleftGrey)"/>
+
+<path   d="M -2 2 L -2 61 A 61 61, 0, 0 1, -61 2 z" stroke="none"
+        fill="url(#bottomleftWhite)"/>
+
+<path   d="M -63 0 L 63 0" stroke="#000" stroke-width="1.5"
+        fill="none" />
+
+<path   d="M 0 63 L 0 -63" stroke="#000" stroke-width="1.5"
+        fill="none" />
+
+<path   id="bmwTextPath"
+        d="M -73 0 C-69 -95, 69 -95, 73 0" fill="none" stroke="none"/>
+
+        <path   id="bmwTextPathDark"
+        d="M -72 -1 C-68 -94, 68 -94, 72 -1" fill="none" stroke="none"/>
+
+<text>
+<textPath   href="#bmwTextPathDark"
+                startOffset="13.5%"
+                font-family="Arial Black"
+                font-size="24pt"
+                fill="#0c2535">B &nbsp;&nbsp; M &nbsp;&nbsp;</textPath>
+</text>
+
+<text>
+<textPath   href="#bmwTextPath"
+            startOffset="13.5%"
+            font-family="Arial Black"
+            font-size="24pt"
+            fill="#fff">B &nbsp;&nbsp; M &nbsp;&nbsp; W</textPath>
+</text>
+
+
+</svg>
+    
+</body>
+</html>
